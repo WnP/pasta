@@ -61,8 +61,7 @@ def create_app():
                 .replace("=", "")
             )
             redis.set(h, paste)
-            return f"""{URL}/{h}
-    """
+            return f"{URL}/{h}\n"
         return HTML.format(HOME)
 
     @app.route("/<h>", methods=["GET"])
