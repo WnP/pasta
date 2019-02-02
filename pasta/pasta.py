@@ -29,17 +29,17 @@ NAME
     pasta: command line pastebin.
 
 SYNOPSIS
-    < command > | curl -F 'paste=<-' {URL}
+    &lt;command&gt; | curl -F 'paste=<-' {URL}
 
 DESCRIPTION
-    add ?<lang> to resulting url for line numbers and syntax highlighting
+    add ?&lt;lang&gt; to resulting url for line numbers and syntax highlighting
     use this form to paste from a browser
 
 EXAMPLES
     $ cat bin/ching | curl -F 'paste=<-' {URL}
        {URL}/aXZI
     $ firefox {URL}/aXZI?py
-    $ curl {URL}/aXZI?raw
+    $ curl {URL}/aXZI?raw  # Raw ouput, useful for download
 
 SEE ALSO
     http://github.com/WnP/pasta
