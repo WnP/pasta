@@ -1,0 +1,18 @@
+version: '3.3'
+
+networks:
+    pasta:
+
+services:
+
+    pasta:
+        image: 57333v3/pasta:latest
+        networks:
+            - pasta
+        ports:
+            - "8080:8080"
+
+    redis:
+        image: redis:alpine
+        networks:
+            - pasta
